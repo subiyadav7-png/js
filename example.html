@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table </title>
+</head>
+<body>
+
+
+    <table id="tabledata" cellspacing="6px" cellpadding="6px" border="3px" style="width: 80%;margin: 30px auto;">
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Verified</th>
+        </tr>
+
+    </table>
+
+
+
+    <script>
+
+       const userdata = [
+        {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        },
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        },
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        },
+        
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        },
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        },
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        },
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        },
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        },
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        },
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        },
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        },
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : false
+        },
+         {
+            username : "ertyui",
+            email : "n@gmail.com",
+            mobile : 234567890,
+            verified : true
+        }
+       ]
+
+       for(i=0;i<userdata.length;i++){
+        const tabledata = document.getElementById("tabledata")
+        tabledata.innerHTML += `
+        <tr>
+       <td> ${userdata[i].username} </td>
+         <td> ${userdata[i].email} </td>
+          <td> ${userdata[i].mobile} </td>
+            <td style="color : ${userdata[i].verified === true ? 'green' : 'red'} "> ${userdata[i].verified === true ? 'Verified' : 'Not-verified'} </td>
+        </tr>
+        `
+       }
+
+    </script>
+    
+</body>
+</html>
